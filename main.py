@@ -115,7 +115,6 @@ def start(message):
 
     markup.add(btn1, btn2, btn3, btn4, btn5, btn6)
 
-    bot.send_message(message.chat.id, f"Ваш чат id: {message.from_user.id} ")
     welcome_text = "Здравствуйте! 👋 Рады приветствовать вас в MORTAL в разделе по изготовлению стандартных и индивидуальных кап с личным дизайном!"
     bot.send_message(message.chat.id, welcome_text, reply_markup=markup)
 
@@ -736,4 +735,5 @@ def send_to_admin(message):
 if __name__ == "__main__":
     print("Бот запущен...")
     print(f"Файлы пользователей сохраняются в папку: {USERS_DATA_DIR}")
+
     bot.polling(none_stop=True)
