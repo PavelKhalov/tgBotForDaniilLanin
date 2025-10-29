@@ -1,15 +1,20 @@
 import telebot
+from dotenv import load_dotenv
 import os
 import json
 from telebot import types
 from datetime import datetime
 
+load_dotenv()
+
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+
 # Инициализация бота
-bot = telebot.TeleBot("8241443312:AAFrGbX9bpWJpJvdugF8gZ8D7gepVDlYYCA")
+bot = telebot.TeleBot(BOT_TOKEN)
 
 # Папка для хранения данных пользователей
 USERS_DATA_DIR = "users_data"
-ADMIN_ID  = 8109501986
+ADMIN_ID  = int(os.getenv("ADMIN_ID"))
 
 # Создаем папку если ее нет
 if not os.path.exists(USERS_DATA_DIR):
