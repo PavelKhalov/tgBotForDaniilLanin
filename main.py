@@ -273,7 +273,7 @@ def send_merch(chat_id):
 
                 if i == 0:
                     media.append(types.InputMediaPhoto(photo_data,
-                                                       caption="<b>Майки «ME vs ME»</b>\n\nСиний, красный, черный цвета - 3.000руб",
+                                                       caption="<b>Майки «ME vs ME»</b>\n\nСиний, красный, черный цвета - 3.500руб",
                                                        parse_mode="HTML"))
                 else:
                     media.append(types.InputMediaPhoto(photo_data))
@@ -351,9 +351,9 @@ def send_merch(chat_id):
 <b>Ассортимент МЕРЧ:</b>
 
 <b>Майки «ME vs ME»</b>
-• Синий цвет - 3.000руб
-• Красный цвет - 3.000руб  
-• Чёрный цвет - 3.000руб
+• Синий цвет - 3.500руб
+• Красный цвет - 3.500руб  
+• Чёрный цвет - 3.500руб
 
 <b>Футболки:</b>
 • «FRIENDS OR MONEY» - 3.500руб
