@@ -8,7 +8,7 @@ from telebot import types
 from datetime import datetime
 
 # Инициализация бота
-bot = telebot.TeleBot("8241443312:AAFrGbX9bpWJpJvdugF8gZ8D7gepVDlYYCA")
+bot = telebot.TeleBot("")
 
 # Папка для хранения данных пользователей
 USERS_DATA_DIR = "users_data"
@@ -789,3 +789,4 @@ if __name__ == "__main__":
     print("Бот запущен...")
     print(f"Файлы пользователей сохраняются в папку: {USERS_DATA_DIR}")
     bot.polling(none_stop=True)
+
